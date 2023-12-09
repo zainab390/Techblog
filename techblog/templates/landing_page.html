@@ -1,20 +1,16 @@
 {% extends "layout.html" %}
 {% block content %}
     <style>
-        body, html {
+        .landing-body {
             margin: 0;
             padding: 0;
-            height: 100%;
-        }
-
-        .landing {
+            height: 100vh;
             background: url('/static/profile_pics/cover_image.jpg') center/cover no-repeat;
-            height: 100vh; /* 100% of the viewport height */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: #fff; /* Set text color for better visibility */
+            color: #f8f8f8; /* Set text color for better visibility */
         }
 
         .landing-content {
@@ -24,7 +20,7 @@
         /* Add additional styling as needed */
     </style>
 
-    <section class="landing">
+    <section class="landing-body">
         <div class="landing-content">
             <h1>TECH BLOG</h1>
             <h2>Byte-sized Brilliance: Crafting Tomorrow's Tech Landscape Today</h2>
