@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+    <style>
+        .landing-body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('/static/profile_pics/cover_image.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #f8f8f8; /* Set text color for better visibility */
+        }
+
+        .landing-content {
+            text-align: center;
+        }
+
+        /* Add additional styling as needed */
+    </style>
+
+    <section class="landing-body">
+        <div class="landing-content">
+            <h1>TECH BLOG</h1>
+            <h2>Byte-sized Brilliance: Crafting Tomorrow's Tech Landscape Today</h2>
+            <h3>Spark, Code, Innovate!</h3>
+        </div>
+    </section>
+{% endblock %}
