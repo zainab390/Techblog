@@ -34,7 +34,7 @@ def login():
             next_page = request.args.get('next')
             return redirect(next_page) if next_page else redirect(url_for('main.home'))
         else:
-            flash('login Unsuccessful, Please check email and password')
+            flash('login Unsuccessful, Please check email and password', 'danger')
     return render_template('login.html', title='Login', form=form)
 
 @users.route("/logout")
